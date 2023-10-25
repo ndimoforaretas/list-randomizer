@@ -30,7 +30,7 @@ A simple list randomizer that takes in items from the user and provides various 
 4. **Animations:** The script dynamically adds an animation class to list items when they are added, providing a visually pleasing effect to the user.
 5. **Clipboard API:** The `navigator.clipboard.writeText()` method is employed to copy the list of names to the user's clipboard.
 
-## The JavaScript functionality for the list randomizer project is as follows:
+## The JavaScript functionality:
 
 1. **DOM Selection:** The script starts by selecting various elements from the DOM such as the form, input field, list, and several buttons.
 2. **Names Array:** An array `names` is initialized to store the names provided by the user.
