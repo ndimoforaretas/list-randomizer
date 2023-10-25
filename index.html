@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Google Fonts - Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link the javascript file -->
+    <script src="script.js" defer></script>
+    <title>Name Randomizer</title>
+    <!-- site description -->
+    <meta
+      name="description"
+      content="A simple name randomizer which takes in names and randomizes them, showing the result in a numbered list."
+    />
+  </head>
+  <body>
+    <!-- create a container -->
+    <div class="container">
+      <!-- create a heading -->
+      <h1>Name Randomizer</h1>
+      <!-- create an input element which takes in the names -->
+
+      <form class="input-form" id="form">
+        <label for="name">Enter names here:</label
+        ><input
+          type="text"
+          id="name"
+          placeholder="Enter a name"
+          maxlength="30"
+          autocomplete="off"
+          required
+        />
+      </form>
+
+      <!-- create a container that holds the list of names and the buttons -->
+      <div class="content">
+        <div class="name-list">
+          <ul id="list">
+            <!-- create an element which displays the number of names in the list -->
+            <li id="count">No names added</li>
+          </ul>
+        </div>
+        <!-- create a container for the buttons -->
+        <div class="buttons">
+          <!-- create a button which adds the name to the list -->
+          <button id="add"><i class="fas fa-plus"></i> Add</button>
+          <!-- create a button which randomizes the names -->
+          <button id="randomize">
+            <i class="fas fa-random"></i> Randomize
+          </button>
+          <!-- create a button which sorts the list alphabetically -->
+          <button id="sort"><i class="fas fa-sort-alpha-down"></i> Sort</button>
+          <!-- create a button which reverses the list -->
+          <button id="reverse">
+            <i class="fas fa-exchange-alt"></i> Reverse
+          </button>
+          <!-- create a button to copy the list -->
+          <button id="copy"><i class="fas fa-copy"></i> Copy</button>
+          <!-- create a button which removes the last name from the list -->
+          <button id="remove"><i class="fas fa-minus"></i> Remove</button>
+          <!-- create a button which clears the list -->
+          <button id="clear"><i class="fas fa-eraser"></i> Clear</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
